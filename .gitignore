@@ -36,7 +36,3 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
-
-# Package locks
-package-lock.json
-yarn.lock
