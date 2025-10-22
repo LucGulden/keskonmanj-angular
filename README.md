@@ -1,9 +1,6 @@
-# keskonmanj-angular
-The web interface of keskonmanj app
+# KeskonmanjAngular
 
-# KeskonmanjWeb
-
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.18.
 
 ## Development server
 
