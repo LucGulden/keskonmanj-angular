@@ -5,6 +5,9 @@ on:
     types: [ closed ]
     branches: [ develop ]
 
+permissions:
+  contents: write
+ 
 jobs:
   delete-branch:
     if: github.event.pull_request.merged == true
