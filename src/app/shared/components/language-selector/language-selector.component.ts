@@ -17,6 +17,7 @@ export class LanguageSelectorComponent {
   
   currentLang: string;
   isDropdownOpen = false;
+  
   private languageService = inject(LanguageService);
   
   constructor() {
