@@ -1,3 +1,6 @@
+[![codecov](https://codecov.io/gh/username/repo/branch/main/graph/badge.svg)](https://codecov.io/gh/username/repo)
+
+
 # KeskonmanjAngular
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.18.
