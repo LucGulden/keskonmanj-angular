@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from '../../../core/services/language.service';
 
@@ -10,15 +10,16 @@ import { LanguageService } from '../../../core/services/language.service';
   styleUrls: ['./language-selector.component.scss']
 })
 export class LanguageSelectorComponent {
-  languages: Array<{code: string, name: string, flagIcon: string}> = [
+  languages: {code: string, name: string, flagIcon: string}[] = [
     { code: 'fr', name: 'Français', flagIcon: 'fi-fr' },
     { code: 'en', name: 'English', flagIcon: 'fi-gb' }
   ];
   
   currentLang: string;
   isDropdownOpen = false;
+  private languageService = inject(LanguageService);
   
-  constructor(private languageService: LanguageService) {
+  constructor() {
     this.currentLang = this.languageService.getCurrentLanguage();
   }
   
