@@ -1,0 +1,73 @@
+@import '../../../../styles/variables';
+
+.reverse-search-section {
+  padding: $spacing-xxl 0;
+  background: $bg-white;
+}
+
+.section-container {
+  max-width: $wide;
+  margin: 0 auto;
+  padding: 0 $spacing-lg;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: $text-primary;
+  margin-bottom: $spacing-sm;
+
+  @include respond-to(tablet) {
+    font-size: 2rem;
+  }
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: $text-secondary;
+  margin-bottom: $spacing-xl;
+}
+
+.ingredients-wrapper {
+  background: $bg-light;
+  padding: $spacing-xl;
+  border-radius: 16px;
+
+  @include respond-to(tablet) {
+    padding: $spacing-lg;
+  }
+}
+
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: $spacing-lg;
+  margin-bottom: $spacing-xl;
+
+  @include respond-to(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-sm;
+  }
+
+  @include respond-to(mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.btn-find-recipes {
+  background: $secondary-green;
+  color: white;
+  border: none;
+  padding: $spacing-md $spacing-xl;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  
+  &:hover {
+    background: $secondary-green-dark;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.3);
+  }
+}

@@ -1,33 +1,19 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatMenuModule } from '@angular/material/menu';
-import { AuthService } from '../../../core/services/auth.service';
-import { MatDividerModule } from '@angular/material/divider';
+import { LanguageSelectorComponent } from '../language-selector/language-selector.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [
-    CommonModule, 
-    RouterLink, 
-    RouterLinkActive,
-    MatToolbarModule,
-    MatButtonModule,
-    MatDividerModule,
-    MatIconModule,
-    MatMenuModule
-  ],
+  imports: [CommonModule, RouterLink, RouterLinkActive, LanguageSelectorComponent],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  authService = inject(AuthService);
+  isMenuOpen = false;
 
-  logout(): void {
-    this.authService.logout();
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 }

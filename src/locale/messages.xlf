@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="cta.title" datatype="html">
+        <source>Prêt à révolutionner votre cuisine ?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/cta-section/cta-section.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cta.description" datatype="html">
+        <source> Rejoignez des milliers d&apos;utilisateurs qui cuisinent déjà plus intelligemment avec Keskonmanj. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/cta-section/cta-section.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cta.button.start" datatype="html">
+        <source>Commencer gratuitement</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/cta-section/cta-section.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cta.button.learn" datatype="html">
+        <source>En savoir plus</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/cta-section/cta-section.component.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero.title" datatype="html">
+        <source>Découvrez des recettes avec vos ingrédients</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/hero-section/hero-section.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero.description" datatype="html">
+        <source> Keskonmanj révolutionne votre cuisine en trouvant les meilleures recettes selon les ingrédients que vous avez chez vous. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/hero-section/hero-section.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero.button.reverse" datatype="html">
+        <source>🔍 Recherche inversée</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/hero-section/hero-section.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero.button.browse" datatype="html">
+        <source>Parcourir les recettes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/hero-section/hero-section.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero.image.alt" datatype="html">
+        <source>Cuisine moderne</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/hero-section/hero-section.component.html</context>
+          <context context-type="linenumber">17,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="popularRecipes.title" datatype="html">
+        <source>Recettes populaires</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/popular-recipes/popular-recipes.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="popularRecipes.viewAll" datatype="html">
+        <source>Voir toutes les recettes →</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/popular-recipes/popular-recipes.component.html</context>
+          <context context-type="linenumber">5,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reverseSearch.title" datatype="html">
+        <source>Recherche Inversée</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/reverse-search/reverse-search.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reverseSearch.subtitle" datatype="html">
+        <source> Sélectionnez vos ingrédients et découvrez ce que vous pouvez cuisiner </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/reverse-search/reverse-search.component.html</context>
+          <context context-type="linenumber">5,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reverseSearch.button.find" datatype="html">
+        <source>✨ Trouver des recettes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/reverse-search/reverse-search.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ingredient.vegetables" datatype="html">
+        <source>Légumes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/reverse-search/reverse-search.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ingredient.meat" datatype="html">
+        <source>Viandes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/reverse-search/reverse-search.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ingredient.fish" datatype="html">
+        <source>Poissons</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/reverse-search/reverse-search.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ingredient.dairy" datatype="html">
+        <source>Produits laitiers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/reverse-search/reverse-search.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="stock.title" datatype="html">
+        <source>Gérez votre stock d&apos;ingrédients</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/stock-management/stock-management.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="stock.description" datatype="html">
+        <source> Maintenez à jour votre inventaire pour des suggestions de recettes encore plus précises et personnalisées. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/stock-management/stock-management.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="stock.feature.add" datatype="html">
+        <source>Ajout rapide d&apos;ingrédients par scan ou recherche</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/stock-management/stock-management.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="stock.feature.expiry" datatype="html">
+        <source>Suivi des dates d&apos;expiration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/stock-management/stock-management.component.html</context>
+          <context context-type="linenumber">17,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="stock.feature.suggestions" datatype="html">
+        <source>Suggestions automatiques basées sur votre stock</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/stock-management/stock-management.component.html</context>
+          <context context-type="linenumber">21,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="stock.button.manage" datatype="html">
+        <source>📦 Gérer mon stock</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/stock-management/stock-management.component.html</context>
+          <context context-type="linenumber">25,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="stock.image.alt" datatype="html">
+        <source>Garde-manger organisé</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/components/stock-management/stock-management.component.html</context>
+          <context context-type="linenumber">31,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="app.name" datatype="html">
+        <source>Keskonmanj</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.html</context>
+          <context context-type="linenumber">5,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.description" datatype="html">
+        <source> L&apos;application qui révolutionne votre façon de cuisiner avec vos ingrédients. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.product.title" datatype="html">
+        <source>Produit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.product.features" datatype="html">
+        <source>Fonctionnalités</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.product.pricing" datatype="html">
+        <source>Tarifs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.product.api" datatype="html">
+        <source>API</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">23,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.support.title" datatype="html">
+        <source>Support</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.support.guide" datatype="html">
+        <source>Guide d&apos;aide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.support.contact" datatype="html">
+        <source>Contact</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.support.faq" datatype="html">
+        <source>FAQ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.legal.title" datatype="html">
+        <source>Légal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">37,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.legal.privacy" datatype="html">
+        <source>Confidentialité</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.legal.terms" datatype="html">
+        <source>Conditions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.legal.cookies" datatype="html">
+        <source>Cookies</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">41,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.copyright" datatype="html">
+        <source>© <x id="INTERPOLATION" equiv-text="{{ currentYear }}"/> Keskonmanj. Tous droits réservés.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">47,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.home" datatype="html">
+        <source>Accueil</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.recipes" datatype="html">
+        <source>Recettes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.stock" datatype="html">
+        <source>Mon Stock</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.favorites" datatype="html">
+        <source>Favoris</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.html</context>
+          <context context-type="linenumber">16,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="search.placeholder" datatype="html">
+        <source>Rechercher une recette...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="button.add" datatype="html">
+        <source>+ Ajouter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ingredient.available" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ ingredient.count }}"/> disponibles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/ingredient-card/ingredient-card.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="recipe.time.minutes" datatype="html">
+        <source>min</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/recipe-card/recipe-card.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="recipe.servings.people" datatype="html">
+        <source>personnes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/recipe-card/recipe-card.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="recipe.button.view" datatype="html">
+        <source>Voir la recette</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/recipe-card/recipe-card.component.html</context>
+          <context context-type="linenumber">13,16</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

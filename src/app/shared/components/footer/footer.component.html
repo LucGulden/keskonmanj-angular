@@ -1,63 +1,49 @@
 <footer class="footer">
-  <mat-toolbar color="primary" class="footer-toolbar">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>
-          <mat-icon>apps</mat-icon>
-          Keskonmanj
-        </h3>
-        <p>Trouvez des recettes avec vos ingrédients</p>
+  <div class="footer-container">
+    <div class="footer-section">
+      <div class="footer-logo">
+        <div class="logo-icon">K</div>
+        <span class="logo-text" i18n="@@app.name">Keskonmanj</span>
       </div>
-      
-      <div class="footer-section">
-        <h4>Liens rapides</h4>
-        <nav class="footer-links">
-          <a mat-button routerLink="/">
-            <mat-icon>home</mat-icon>
-            Accueil
-          </a>
-          <a mat-button routerLink="/faq">
-            <mat-icon>help</mat-icon>
-            FAQ
-          </a>
-          <a mat-button routerLink="/contact">
-            <mat-icon>contact_mail</mat-icon>
-            Contact
-          </a>
-        </nav>
-      </div>
-      
-      <div class="footer-section">
-        <h4>Légal</h4>
-        <nav class="footer-links">
-          <a mat-button routerLink="/legal">
-            <mat-icon>gavel</mat-icon>
-            Mentions légales
-          </a>
-        </nav>
-      </div>
-      
-      <div class="footer-section">
-        <h4>Suivez-nous</h4>
-        <div class="social-links">
-          <button mat-icon-button aria-label="Facebook">
-            <mat-icon>facebook</mat-icon>
-          </button>
-          <button mat-icon-button aria-label="Twitter">
-            <mat-icon>😄</mat-icon>
-          </button>
-          <button mat-icon-button aria-label="LinkedIn">
-            <mat-icon>business</mat-icon>
-          </button>
-        </div>
+      <p class="footer-description" i18n="@@footer.description">
+        L'application qui révolutionne votre façon de cuisiner avec vos ingrédients.
+      </p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="Instagram">📷</a>
       </div>
     </div>
-  </mat-toolbar>
-  
+
+    <div class="footer-section">
+      <h4 i18n="@@footer.product.title">Produit</h4>
+      <ul>
+        <li><a routerLink="/features" i18n="@@footer.product.features">Fonctionnalités</a></li>
+        <li><a routerLink="/tarifs" i18n="@@footer.product.pricing">Tarifs</a></li>
+        <li><a routerLink="/api" i18n="@@footer.product.api">API</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4 i18n="@@footer.support.title">Support</h4>
+      <ul>
+        <li><a routerLink="/guide" i18n="@@footer.support.guide">Guide d'aide</a></li>
+        <li><a routerLink="/contact" i18n="@@footer.support.contact">Contact</a></li>
+        <li><a routerLink="/faq" i18n="@@footer.support.faq">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4 i18n="@@footer.legal.title">Légal</h4>
+      <ul>
+        <li><a routerLink="/legal" i18n="@@footer.legal.privacy">Confidentialité</a></li>
+        <li><a routerLink="/legal" i18n="@@footer.legal.terms">Conditions</a></li>
+        <li><a routerLink="/legal" i18n="@@footer.legal.cookies">Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+
   <div class="footer-bottom">
-    <p>
-      <mat-icon>copyright</mat-icon>
-      {{ currentYear }} Keskonmanj. Tous droits réservés.
-    </p>
+    <p i18n="@@footer.copyright">© {{ currentYear }} Keskonmanj. Tous droits réservés.</p>
   </div>
 </footer>

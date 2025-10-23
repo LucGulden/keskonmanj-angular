@@ -1,4 +1,6 @@
-.app-container {
+@import './styles/variables';
+
+.app-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -6,9 +8,4 @@
 
 .main-content {
   flex: 1;
-  padding: 2rem;
-  
-  @media (max-width: 768px) {
-    padding: 1rem;
-  }
 }

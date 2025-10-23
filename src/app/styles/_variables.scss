@@ -1,0 +1,42 @@
+// Couleurs principales
+$primary-orange: #FF6B35;
+$primary-orange-dark: #E55A28;
+$secondary-green: #2ECC71;
+$secondary-green-dark: #27AE60;
+
+// Couleurs de fond
+$bg-light: #F8F9FA;
+$bg-white: #FFFFFF;
+$bg-dark: #2C3E50;
+
+// Couleurs de texte
+$text-primary: #2C3E50;
+$text-secondary: #7F8C8D;
+$text-light: #FFFFFF;
+
+// Espacements
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+$spacing-xxl: 4rem;
+
+// Breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$wide: 1600px;
+
+// Mixins
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: $mobile) { @content; }
+  }
+  @else if $breakpoint == tablet {
+    @media (max-width: $tablet) { @content; }
+  }
+  @else if $breakpoint == desktop {
+    @media (min-width: $desktop) { @content; }
+  }
+}

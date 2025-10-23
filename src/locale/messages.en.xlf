@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="fr" trgLang="en">
+  <file id="ngi18n" datatype="plaintext" original="ng2.template">
+    <body>
+      
+      <!-- App Name -->
+      <trans-unit id="app.name" datatype="html">
+        <source>Keskonmanj</source>
+        <target>Keskonmanj</target>
+      </trans-unit>
+      
+      <!-- Navigation -->
+      <trans-unit id="nav.home" datatype="html">
+        <source>Accueil</source>
+        <target>Home</target>
+      </trans-unit>
+      
+      <trans-unit id="nav.recipes" datatype="html">
+        <source>Recettes</source>
+        <target>Recipes</target>
+      </trans-unit>
+      
+      <trans-unit id="nav.stock" datatype="html">
+        <source>Mon Stock</source>
+        <target>My Stock</target>
+      </trans-unit>
+      
+      <trans-unit id="nav.favorites" datatype="html">
+        <source>Favoris</source>
+        <target>Favorites</target>
+      </trans-unit>
+      
+      <!-- Search -->
+      <trans-unit id="search.placeholder" datatype="html">
+        <source>Rechercher une recette...</source>
+        <target>Search for a recipe...</target>
+      </trans-unit>
+      
+      <!-- Buttons -->
+      <trans-unit id="button.add" datatype="html">
+        <source>+ Ajouter</source>
+        <target>+ Add</target>
+      </trans-unit>
+      
+      <!-- Hero Section -->
+      <trans-unit id="hero.title" datatype="html">
+        <source>Découvrez des recettes avec vos ingrédients</source>
+        <target>Discover recipes with your ingredients</target>
+      </trans-unit>
+      
+      <trans-unit id="hero.description" datatype="html">
+        <source>Keskonmanj révolutionne votre cuisine en trouvant les meilleures recettes selon les ingrédients que vous avez chez vous.</source>
+        <target>Keskonmanj revolutionizes your cooking by finding the best recipes based on the ingredients you have at home.</target>
+      </trans-unit>
+      
+      <trans-unit id="hero.button.reverse" datatype="html">
+        <source>🔍 Recherche inversée</source>
+        <target>🔍 Reverse Search</target>
+      </trans-unit>
+      
+      <trans-unit id="hero.button.browse" datatype="html">
+        <source>Parcourir les recettes</source>
+        <target>Browse Recipes</target>
+      </trans-unit>
+      
+      <trans-unit id="hero.image.alt" datatype="html">
+        <source>Cuisine moderne</source>
+        <target>Modern kitchen</target>
+      </trans-unit>
+      
+      <!-- Reverse Search -->
+      <trans-unit id="reverseSearch.title" datatype="html">
+        <source>Recherche Inversée</source>
+        <target>Reverse Search</target>
+      </trans-unit>
+      
+      <trans-unit id="reverseSearch.subtitle" datatype="html">
+        <source>Sélectionnez vos ingrédients et découvrez ce que vous pouvez cuisiner</source>
+        <target>Select your ingredients and discover what you can cook</target>
+      </trans-unit>
+      
+      <trans-unit id="reverseSearch.button.find" datatype="html">
+        <source>✨ Trouver des recettes</source>
+        <target>✨ Find Recipes</target>
+      </trans-unit>
+      
+      <!-- Ingredients -->
+      <trans-unit id="ingredient.vegetables" datatype="html">
+        <source>Légumes</source>
+        <target>Vegetables</target>
+      </trans-unit>
+      
+      <trans-unit id="ingredient.meat" datatype="html">
+        <source>Viandes</source>
+        <target>Meat</target>
+      </trans-unit>
+      
+      <trans-unit id="ingredient.fish" datatype="html">
+        <source>Poissons</source>
+        <target>Fish</target>
+      </trans-unit>
+      
+      <trans-unit id="ingredient.dairy" datatype="html">
+        <source>Produits laitiers</source>
+        <target>Dairy Products</target>
+      </trans-unit>
+      
+      <trans-unit id="ingredient.available" datatype="html">
+        <source>{count} disponibles</source>
+        <target>{count} available</target>
+      </trans-unit>
+      
+      <!-- Popular Recipes -->
+      <trans-unit id="popularRecipes.title" datatype="html">
+        <source>Recettes populaires</source>
+        <target>Popular Recipes</target>
+      </trans-unit>
+      
+      <trans-unit id="popularRecipes.viewAll" datatype="html">
+        <source>Voir toutes les recettes →</source>
+        <target>View all recipes →</target>
+      </trans-unit>
+      
+      <!-- Recipe Card -->
+      <trans-unit id="recipe.time.minutes" datatype="html">
+        <source>min</source>
+        <target>min</target>
+      </trans-unit>
+      
+      <trans-unit id="recipe.servings.people" datatype="html">
+        <source>personnes</source>
+        <target>people</target>
+      </trans-unit>
+      
+      <trans-unit id="recipe.button.view" datatype="html">
+        <source>Voir la recette</source>
+        <target>View Recipe</target>
+      </trans-unit>
+      
+      <!-- Stock Management -->
+      <trans-unit id="stock.title" datatype="html">
+        <source>Gérez votre stock d'ingrédients</source>
+        <target>Manage your ingredient stock</target>
+      </trans-unit>
+      
+      <trans-unit id="stock.description" datatype="html">
+        <source>Maintenez à jour votre inventaire pour des suggestions de recettes encore plus précises et personnalisées.</source>
+        <target>Keep your inventory up to date for even more accurate and personalized recipe suggestions.</target>
+      </trans-unit>
+      
+      <trans-unit id="stock.feature.add" datatype="html">
+        <source>Ajout rapide d'ingrédients par scan ou recherche</source>
+        <target>Quick ingredient addition by scan or search</target>
+      </trans-unit>
+      
+      <trans-unit id="stock.feature.expiry" datatype="html">
+        <source>Suivi des dates d'expiration</source>
+        <target>Expiration date tracking</target>
+      </trans-unit>
+      
+      <trans-unit id="stock.feature.suggestions" datatype="html">
+        <source>Suggestions automatiques basées sur votre stock</source>
+        <target>Automatic suggestions based on your stock</target>
+      </trans-unit>
+      
+      <trans-unit id="stock.button.manage" datatype="html">
+        <source>📦 Gérer mon stock</source>
+        <target>📦 Manage my stock</target>
+      </trans-unit>
+      
+      <trans-unit id="stock.image.alt" datatype="html">
+        <source>Garde-manger organisé</source>
+        <target>Organized pantry</target>
+      </trans-unit>
+      
+      <!-- CTA Section -->
+      <trans-unit id="cta.title" datatype="html">
+        <source>Prêt à révolutionner votre cuisine ?</source>
+        <target>Ready to revolutionize your cooking?</target>
+      </trans-unit>
+      
+      <trans-unit id="cta.description" datatype="html">
+        <source>Rejoignez des milliers d'utilisateurs qui cuisinent déjà plus intelligemment avec Keskonmanj.</source>
+        <target>Join thousands of users who are already cooking smarter with Keskonmanj.</target>
+      </trans-unit>
+      
+      <trans-unit id="cta.button.start" datatype="html">
+        <source>Commencer gratuitement</source>
+        <target>Start for free</target>
+      </trans-unit>
+      
+      <trans-unit id="cta.button.learn" datatype="html">
+        <source>En savoir plus</source>
+        <target>Learn more</target>
+      </trans-unit>
+      
+      <!-- Footer -->
+      <trans-unit id="footer.description" datatype="html">
+        <source>L'application qui révolutionne votre façon de cuisiner avec vos ingrédients.</source>
+        <target>The app that revolutionizes the way you cook with your ingredients.</target>
+      </trans-unit>
+      
+      <trans-unit id="footer.product.title" datatype="html">
+        <source>Produit</source>
+        <target>Product</target>
+      </trans-unit>
+      
+      <trans-unit id="footer.product.features" datatype="html">
+        <source>Fonctionnalités</source>
+        <target>Features</target>
+      </trans-unit>
+      
+      <trans-unit id="footer.product.pricing" datatype="html">
+        <source>Tarifs</source>
+        <target>Pricing</target>
+      </trans-unit>
+      
+      <trans-unit id="footer.product.api" datatype="html">
+        <source>API</source>
+        <target>API</target>
+      </trans-unit>
+      
+      <trans-unit id="footer.support.title" datatype="html">
+        <source>Support</source>
+        <target>Support</target>
+      </trans-unit>
+      
+      <trans-unit id="footer.support.guide" datatype="html">
+        <source>Guide d'aide</source>
+        <target>Help Guide</target>
+      </trans-unit>
+      
+      <trans-unit id="footer.support.contact" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+      
+      <trans-unit id="footer.support.faq" datatype="html">
+        <source>FAQ</source>
+        <target>FAQ</target>
+      </trans-unit>
+      
+      <trans-unit id="footer.legal.title" datatype="html">
+        <source>Légal</source>
+        <target>Legal</target>
+      </trans-unit>
+      
+      <trans-unit id="footer.legal.privacy" datatype="html">
+        <source>Confidentialité</source>
+        <target>Privacy</target>
+      </trans-unit>
+      
+      <trans-unit id="footer.legal.terms" datatype="html">
+        <source>Conditions</source>
+        <target>Terms</target>
+      </trans-unit>
+      
+      <trans-unit id="footer.legal.cookies" datatype="html">
+        <source>Cookies</source>
+        <target>Cookies</target>
+      </trans-unit>
+      
+      <trans-unit id="footer.copyright" datatype="html">
+        <source>© {year} Keskonmanj. Tous droits réservés.</source>
+        <target>© {year} Keskonmanj. All rights reserved.</target>
+      </trans-unit>
+      
+    </body>
+  </file>
+</xliff>

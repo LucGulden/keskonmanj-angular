@@ -1,0 +1,151 @@
+@import '../../../../styles/variables';
+
+.popular-recipes-section {
+  padding: $spacing-xxl 0;
+  background: $bg-light;
+}
+
+.section-container {
+  max-width: $wide;
+  margin: 0 auto;
+  padding: 0 $spacing-lg;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-xl;
+
+  @include respond-to(tablet) {
+    flex-direction: column;
+    gap: $spacing-sm;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: $text-primary;
+    margin: 0;
+
+    @include respond-to(tablet) {
+      font-size: 2rem;
+    }
+  }
+  
+  .view-all {
+    color: $primary-orange;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    
+    &:hover {
+      color: $primary-orange-dark;
+    }
+  }
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+
+  @include respond-to(tablet) {
+    gap: $spacing-sm;
+  }
+}
+
+.carousel-btn {
+  background: white;
+  border: 2px solid $primary-orange;
+  color: $primary-orange;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  
+  &:hover:not(.disabled) {
+    background: $primary-orange;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  &.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    border-color: $text-secondary;
+    color: $text-secondary;
+  }
+
+  @include respond-to(tablet) {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $spacing-lg;
+  flex: 1;
+  overflow: hidden;
+
+  @include respond-to(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-sm;
+  }
+
+  @include respond-to(mobile) {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-item {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-xs;
+  margin-top: $spacing-lg;
+  
+  .indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba($primary-orange, 0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+    
+    &.active {
+      background: $primary-orange;
+      width: 32px;
+      border-radius: 6px;
+    }
+    
+    &:hover {
+      background: rgba($primary-orange, 0.6);
+    }
+  }
+}

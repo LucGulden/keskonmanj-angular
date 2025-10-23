@@ -1,62 +1,186 @@
+@import '../../../styles/variables';
+
 .header {
+  background: $bg-white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .header-container {
-  max-width: 1200px;
+  max-width: $wide;
   margin: 0 auto;
-  width: 100%;
+  padding: $spacing-sm $spacing-lg;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  justify-content: space-between;
+  gap: $spacing-md;
+
+  @include respond-to(tablet) {
+    padding: $spacing-sm;
+  }
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  color: white;
+  gap: $spacing-xs;
   text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 500;
-  transition: opacity 0.3s;
   
-  &:hover {
-    opacity: 0.8;
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+    background: $primary-orange;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.25rem;
   }
   
-  mat-icon {
-    font-size: 28px;
-    height: 28px;
-    width: 28px;
+  .logo-text {
+    font-weight: 600;
+    color: $text-primary;
+    font-size: 1.25rem;
   }
 }
 
-.desktop-nav {
+.nav-desktop {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  gap: $spacing-md;
   
-  a, button {
+  a {
+    color: $text-primary;
+    text-decoration: none;
+    padding: $spacing-xs $spacing-sm;
+    border-radius: 6px;
+    transition: all 0.3s;
+    
+    &:hover {
+      background: rgba($primary-orange, 0.1);
+      color: $primary-orange;
+    }
+    
     &.active {
-      background-color: rgba(255, 255, 255, 0.15);
+      background: $primary-orange;
+      color: white;
     }
   }
-}
 
-.mobile-menu {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .desktop-nav {
+  @include respond-to(tablet) {
     display: none;
   }
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+
+  @include respond-to(tablet) {
+    display: none;
+  }
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: $bg-light;
+  border-radius: 8px;
+  padding: $spacing-xs $spacing-sm;
   
-  .mobile-menu {
-    display: inline-flex;
+  input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 200px;
+    font-size: 0.9rem;
+  }
+  
+  .search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+}
+
+.btn-add {
+  background: $primary-orange;
+  color: white;
+  border: none;
+  padding: $spacing-xs $spacing-md;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+  
+  &:hover {
+    background: $primary-orange-dark;
+  }
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 4px;
+  
+  span {
+    width: 25px;
+    height: 3px;
+    background: $text-primary;
+    transition: all 0.3s;
+  }
+
+  @include respond-to(tablet) {
+    display: flex;
+  }
+}
+
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  background: $bg-white;
+  border-top: 1px solid $bg-light;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+
+  &.active {
+    max-height: 300px;
+  }
+  
+  a {
+    padding: $spacing-sm $spacing-lg;
+    color: $text-primary;
+    text-decoration: none;
+    border-bottom: 1px solid $bg-light;
+    
+    &:hover {
+      background: $bg-light;
+    }
+  }
+
+  @include respond-to(tablet) {
+    display: flex;
   }
 }

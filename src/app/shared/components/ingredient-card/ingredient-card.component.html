@@ -1,0 +1,7 @@
+<div class="ingredient-card" [style.--ingredient-color]="ingredient.color">
+  <div class="ingredient-icon" [style.color]="ingredient.color">
+    {{ ingredient.icon }}
+  </div>
+  <h3>{{ ingredient.name }}</h3>
+  <p i18n="@@ingredient.available">{{ ingredient.count }} disponibles</p>
+</div>

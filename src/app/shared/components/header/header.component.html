@@ -1,82 +1,48 @@
-<mat-toolbar color="primary" class="header">
+<header class="header">
   <div class="header-container">
-    <a routerLink="/" class="logo">
-      <mat-icon>home</mat-icon>
-      <span>MonApp</span>
-    </a>
+    <div class="logo">
+      <div class="logo-icon">K</div>
+      <span class="logo-text" i18n="@@app.name">Keskonmanj</span>
+    </div>
 
-    <nav class="desktop-nav">
-      <a mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-        Accueil
-      </a>
-      <a mat-button routerLink="/faq" routerLinkActive="active">
-        FAQ
-      </a>
-      <a mat-button routerLink="/contact" routerLinkActive="active">
-        Contact
-      </a>
-      
-      @if (authService.currentUser()) {
-        <button mat-button [matMenuTriggerFor]="userMenu">
-          <mat-icon>account_circle</mat-icon>
-          {{ authService.currentUser()?.firstName }}
-        </button>
-        <mat-menu #userMenu="matMenu">
-          <button mat-menu-item (click)="logout()">
-            <mat-icon>logout</mat-icon>
-            <span>Déconnexion</span>
-          </button>
-        </mat-menu>
-      } @else {
-        <a mat-button routerLink="/login" routerLinkActive="active">
-          <mat-icon>login</mat-icon>
-          Connexion
-        </a>
-        <a mat-raised-button color="accent" routerLink="/register" routerLinkActive="active">
-          Inscription
-        </a>
-      }
+    <nav class="nav-desktop">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" 
+         i18n="@@nav.home">Accueil</a>
+      <a routerLink="/recipes" routerLinkActive="active" 
+         i18n="@@nav.recipes">Recettes</a>
+      <a routerLink="/stock" routerLinkActive="active" 
+         i18n="@@nav.stock">Mon Stock</a>
+      <a routerLink="/favorites" routerLinkActive="active" 
+         i18n="@@nav.favorites">Favoris</a>
     </nav>
 
-    <button mat-icon-button class="mobile-menu" [matMenuTriggerFor]="menu">
-      <mat-icon>menu</mat-icon>
-    </button>
+    <div class="header-actions">
+      <div class="search-bar">
+        <input type="text" 
+               i18n-placeholder="@@search.placeholder"
+               placeholder="Rechercher une recette...">
+        <button class="search-btn">
+          <span class="icon">🔍</span>
+        </button>
+      </div>
+      <app-language-selector></app-language-selector>
+      <button class="btn-add" i18n="@@button.add">+ Ajouter</button>
+      <div class="user-avatar">
+        <img src="https://www.svgrepo.com/show/384670/account-avatar-profile-user.svg" alt="User">
+      </div>
+    </div>
 
-    <mat-menu #menu="matMenu" class="mobile-nav">
-      <a mat-menu-item routerLink="/">
-        <mat-icon>home</mat-icon>
-        <span>Accueil</span>
-      </a>
-      <a mat-menu-item routerLink="/faq">
-        <mat-icon>help</mat-icon>
-        <span>FAQ</span>
-      </a>
-      <a mat-menu-item routerLink="/contact">
-        <mat-icon>contact_mail</mat-icon>
-        <span>Contact</span>
-      </a>
-      
-      @if (authService.currentUser()) {
-        <mat-divider></mat-divider>
-        <button mat-menu-item disabled>
-          <mat-icon>account_circle</mat-icon>
-          <span>{{ authService.currentUser()?.firstName }}</span>
-        </button>
-        <button mat-menu-item (click)="logout()">
-          <mat-icon>logout</mat-icon>
-          <span>Déconnexion</span>
-        </button>
-      } @else {
-        <mat-divider></mat-divider>
-        <a mat-menu-item routerLink="/login">
-          <mat-icon>login</mat-icon>
-          <span>Connexion</span>
-        </a>
-        <a mat-menu-item routerLink="/register">
-          <mat-icon>person_add</mat-icon>
-          <span>Inscription</span>
-        </a>
-      }
-    </mat-menu>
+    <button class="menu-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
-</mat-toolbar>
+
+  <nav class="nav-mobile" [class.active]="isMenuOpen">
+    <a routerLink="/" (click)="toggleMenu()" i18n="@@nav.home">Accueil</a>
+    <a routerLink="/recipes" (click)="toggleMenu()" i18n="@@nav.recipes">Recettes</a>
+    <a routerLink="/stock" (click)="toggleMenu()" i18n="@@nav.stock">Mon Stock</a>
+    <a routerLink="/favorites" (click)="toggleMenu()" i18n="@@nav.favorites">Favoris</a>
+  </nav>
+</header>
