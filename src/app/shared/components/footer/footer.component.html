@@ -1,0 +1,63 @@
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>
+        <mat-icon>apps</mat-icon>
+        MonApp
+      </h3>
+      <p>Votre application de confiance</p>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Liens rapides</h4>
+      <nav class="footer-links">
+        <a mat-button routerLink="/">
+          <mat-icon>home</mat-icon>
+          Accueil
+        </a>
+        <a mat-button routerLink="/faq">
+          <mat-icon>help</mat-icon>
+          FAQ
+        </a>
+        <a mat-button routerLink="/contact">
+          <mat-icon>contact_mail</mat-icon>
+          Contact
+        </a>
+      </nav>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Légal</h4>
+      <nav class="footer-links">
+        <a mat-button routerLink="/legal">
+          <mat-icon>gavel</mat-icon>
+          Mentions légales
+        </a>
+      </nav>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Suivez-nous</h4>
+      <div class="social-links">
+        <button mat-icon-button aria-label="Facebook">
+          <mat-icon>facebook</mat-icon>
+        </button>
+        <button mat-icon-button aria-label="Twitter">
+          <mat-icon>😄</mat-icon>
+        </button>
+        <button mat-icon-button aria-label="LinkedIn">
+          <mat-icon>business</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <mat-divider></mat-divider>
+  
+  <div class="footer-bottom">
+    <p>
+      <mat-icon>copyright</mat-icon>
+      {{ currentYear }} MonApp. Tous droits réservés.
+    </p>
+  </div>
+</footer>

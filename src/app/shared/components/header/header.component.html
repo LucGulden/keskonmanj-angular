@@ -1,0 +1,82 @@
+<mat-toolbar color="primary" class="header">
+  <div class="header-container">
+    <a routerLink="/" class="logo">
+      <mat-icon>home</mat-icon>
+      <span>MonApp</span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        Accueil
+      </a>
+      <a mat-button routerLink="/faq" routerLinkActive="active">
+        FAQ
+      </a>
+      <a mat-button routerLink="/contact" routerLinkActive="active">
+        Contact
+      </a>
+      
+      @if (authService.currentUser()) {
+        <button mat-button [matMenuTriggerFor]="userMenu">
+          <mat-icon>account_circle</mat-icon>
+          {{ authService.currentUser()?.firstName }}
+        </button>
+        <mat-menu #userMenu="matMenu">
+          <button mat-menu-item (click)="logout()">
+            <mat-icon>logout</mat-icon>
+            <span>Déconnexion</span>
+          </button>
+        </mat-menu>
+      } @else {
+        <a mat-button routerLink="/login" routerLinkActive="active">
+          <mat-icon>login</mat-icon>
+          Connexion
+        </a>
+        <a mat-raised-button color="accent" routerLink="/register" routerLinkActive="active">
+          Inscription
+        </a>
+      }
+    </nav>
+
+    <button mat-icon-button class="mobile-menu" [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu" class="mobile-nav">
+      <a mat-menu-item routerLink="/">
+        <mat-icon>home</mat-icon>
+        <span>Accueil</span>
+      </a>
+      <a mat-menu-item routerLink="/faq">
+        <mat-icon>help</mat-icon>
+        <span>FAQ</span>
+      </a>
+      <a mat-menu-item routerLink="/contact">
+        <mat-icon>contact_mail</mat-icon>
+        <span>Contact</span>
+      </a>
+      
+      @if (authService.currentUser()) {
+        <mat-divider></mat-divider>
+        <button mat-menu-item disabled>
+          <mat-icon>account_circle</mat-icon>
+          <span>{{ authService.currentUser()?.firstName }}</span>
+        </button>
+        <button mat-menu-item (click)="logout()">
+          <mat-icon>logout</mat-icon>
+          <span>Déconnexion</span>
+        </button>
+      } @else {
+        <mat-divider></mat-divider>
+        <a mat-menu-item routerLink="/login">
+          <mat-icon>login</mat-icon>
+          <span>Connexion</span>
+        </a>
+        <a mat-menu-item routerLink="/register">
+          <mat-icon>person_add</mat-icon>
+          <span>Inscription</span>
+        </a>
+      }
+    </mat-menu>
+  </div>
+</mat-toolbar>
