@@ -1,0 +1,323 @@
+// ============================================
+// OPTION 1 - FRAÎCHEUR & APPÉTIT
+// Vert frais + Orange vif (RECOMMANDÉ)
+// ============================================
+/*
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+// Définir les palettes personnalisées pour Angular Material 18+
+$keskonmanj-primary: mat.m2-define-palette(mat.$m2-green-palette, 500, 300, 700);
+$keskonmanj-accent: mat.m2-define-palette(mat.$m2-deep-orange-palette, A400, A200, A700);
+$keskonmanj-warn: mat.m2-define-palette(mat.$m2-red-palette);
+
+// Créer le thème clair
+$keskonmanj-theme: mat.m2-define-light-theme((
+  color: (
+    primary: $keskonmanj-primary,
+    accent: $keskonmanj-accent,
+    warn: $keskonmanj-warn,
+  ),
+  typography: mat.m2-define-typography-config(
+    $font-family: '"Roboto", "Helvetica Neue", sans-serif',
+    $headline-1: mat.m2-define-typography-level(2.5rem, 3rem, 700),
+    $headline-2: mat.m2-define-typography-level(2rem, 2.5rem, 600),
+    $headline-3: mat.m2-define-typography-level(1.75rem, 2.25rem, 600),
+    $body-1: mat.m2-define-typography-level(1rem, 1.5rem, 400),
+  ),
+  density: 0,
+));
+
+// Appliquer le thème
+@include mat.all-component-themes($keskonmanj-theme);
+
+// Variables CSS personnalisées pour utilisation facile
+:root {
+  --primary-color: #4CAF50;
+  --primary-light: #81C784;
+  --primary-dark: #388E3C;
+  --accent-color: #FF6D00;
+  --accent-light: #FF9E40;
+  --accent-dark: #E65100;
+  --warn-color: #F44336;
+  --background: #FAFAFA;
+  --surface: #FFFFFF;
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(0, 0, 0, 0.6);
+}
+
+// Styles personnalisés supplémentaires
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+.card-recipe {
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(76, 175, 80, 0.2);
+  }
+}
+*/
+
+// ============================================
+// OPTION 2 - GOURMAND & CHALEUREUX
+// Orange cuivré + Jaune doré
+// ============================================
+
+/*
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+// Définir les palettes personnalisées pour Angular Material 18+
+$keskonmanj-primary: mat.m2-define-palette(mat.$m2-deep-orange-palette, 800, 600, 900);
+$keskonmanj-accent: mat.m2-define-palette(mat.$m2-amber-palette, A400, A200, A700);
+$keskonmanj-warn: mat.m2-define-palette(mat.$m2-red-palette);
+
+// Créer le thème clair
+$keskonmanj-theme: mat.m2-define-light-theme((
+  color: (
+    primary: $keskonmanj-primary,
+    accent: $keskonmanj-accent,
+    warn: $keskonmanj-warn,
+  ),
+  typography: mat.m2-define-typography-config(
+    $font-family: '"Poppins", "Roboto", sans-serif',
+    $headline-1: mat.m2-define-typography-level(2.5rem, 3rem, 700),
+    $headline-2: mat.m2-define-typography-level(2rem, 2.5rem, 600),
+    $headline-3: mat.m2-define-typography-level(1.75rem, 2.25rem, 600),
+    $body-1: mat.m2-define-typography-level(1rem, 1.5rem, 400),
+  ),
+  density: 0,
+));
+
+// Appliquer le thème
+@include mat.all-component-themes($keskonmanj-theme);
+
+// Variables CSS personnalisées
+:root {
+  --primary-color: #D84315;
+  --primary-light: #FF6E40;
+  --primary-dark: #BF360C;
+  --accent-color: #FFC400;
+  --accent-light: #FFD740;
+  --accent-dark: #FF6F00;
+  --warn-color: #F44336;
+  --background: #FFF8E1;
+  --surface: #FFFFFF;
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(0, 0, 0, 0.6);
+}
+
+// Styles personnalisés supplémentaires
+body {
+  background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+  color: var(--text-primary);
+  font-family: 'Poppins', 'Roboto', sans-serif;
+}
+
+.card-recipe {
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(216, 67, 21, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(216, 67, 21, 0.25);
+  }
+}
+*/
+
+
+// ============================================
+// OPTION 3 - ÉLÉGANT & ÉPURÉ
+// Bleu-gris + Lime
+// ============================================
+
+
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+// Définir les palettes personnalisées pour Angular Material 18+
+$keskonmanj-primary: mat.m2-define-palette(mat.$m2-blue-gray-palette, 700, 500, 900);
+$keskonmanj-accent: mat.m2-define-palette(mat.$m2-lime-palette, 600, 400, 800);
+$keskonmanj-warn: mat.m2-define-palette(mat.$m2-red-palette);
+
+// Créer le thème clair
+$keskonmanj-theme: mat.m2-define-light-theme((
+  color: (
+    primary: $keskonmanj-primary,
+    accent: $keskonmanj-accent,
+    warn: $keskonmanj-warn,
+  ),
+  typography: mat.m2-define-typography-config(
+    $font-family: '"Inter", "Roboto", sans-serif',
+    $headline-1: mat.m2-define-typography-level(2.5rem, 3rem, 600),
+    $headline-2: mat.m2-define-typography-level(2rem, 2.5rem, 500),
+    $headline-3: mat.m2-define-typography-level(1.75rem, 2.25rem, 500),
+    $body-1: mat.m2-define-typography-level(1rem, 1.5rem, 400),
+  ),
+  density: 0,
+));
+
+// Appliquer le thème
+@include mat.all-component-themes($keskonmanj-theme);
+
+// Variables CSS personnalisées
+:root {
+  --primary-color: #455A64;
+  --primary-light: #607D8B;
+  --primary-dark: #37474F;
+  --accent-color: #C0CA33;
+  --accent-light: #D4E157;
+  --accent-dark: #AFB42B;
+  --warn-color: #F44336;
+  --background: #ECEFF1;
+  --surface: #FFFFFF;
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(0, 0, 0, 0.6);
+}
+
+// Styles personnalisés supplémentaires
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+.card-recipe {
+  background: var(--surface);
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(69, 90, 100, 0.15);
+  }
+}
+
+
+
+// ============================================
+// STYLES COMMUNS POUR TOUS LES THÈMES
+// ============================================
+
+// Boutons personnalisés
+.btn-primary-custom {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  
+  &:hover {
+    background-color: var(--primary-dark) !important;
+  }
+}
+
+.btn-accent-custom {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+  
+  &:hover {
+    background-color: var(--accent-dark) !important;
+  }
+}
+
+// Cards recettes
+.recipe-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  
+  .recipe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .recipe-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+}
+
+// Chips d'ingrédients
+.ingredient-chip {
+  background-color: var(--primary-light) !important;
+  color: white !important;
+  margin: 4px !important;
+  
+  &.selected {
+    background-color: var(--accent-color) !important;
+  }
+}
+
+// Container principal
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+// Titres de section
+.section-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+  mat-icon {
+    color: var(--accent-color);
+  }
+}
+
+// Input de recherche personnalisé
+.search-box {
+  .mat-mdc-form-field {
+    width: 100%;
+    
+    .mat-mdc-text-field-wrapper {
+      background-color: var(--surface);
+      border-radius: 24px;
+    }
+  }
+}
+
+// Animation fade-in
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
