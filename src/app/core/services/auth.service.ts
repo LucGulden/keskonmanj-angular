@@ -1,4 +1,4 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, signal, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Observable, tap } from 'rxjs';
@@ -13,12 +13,12 @@ export class AuthService {
   private readonly USER_KEY = 'user_data';
   private apiUrl = 'http://localhost:3000/api/auth';
   
+  private http = inject(HttpClient);
+  private router = inject(Router);
+  
   currentUser = signal<User | null>(null);
 
-  constructor(
-    private http: HttpClient,
-    private router: Router
-  ) {
+  constructor() {
     this.loadUserFromStorage();
   }
 
