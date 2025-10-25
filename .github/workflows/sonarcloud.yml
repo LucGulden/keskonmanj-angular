@@ -12,6 +12,10 @@ on:
       - main
       - develop
 
+permissions:
+  contents: read
+  pull-requests: write  # Pour commenter sur les PR
+  
 jobs:
   sonarcloud:
     name: SonarCloud Code Analysis
