@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Input, OnInit, OnDestroy } from '@angular/core';
+import { Directive, ElementRef, Input, OnInit, OnDestroy, inject } from '@angular/core';
 
 export type AnimationType = 'fade-in' | 'slide-up' | 'slide-down' | 'slide-left' | 'slide-right' | 'zoom-in';
 
@@ -8,13 +8,12 @@ export type AnimationType = 'fade-in' | 'slide-up' | 'slide-down' | 'slide-left'
 })
 export class ScrollRevealDirective implements OnInit, OnDestroy {
   @Input() animationType: AnimationType = 'fade-in';
-  @Input() animationDelay: number = 0;
-  @Input() animationDuration: number = 0.8;
-  @Input() threshold: number = 0.1;
+  @Input() animationDelay = 0;
+  @Input() animationDuration = 0.8;
+  @Input() threshold = 0.1;
 
   private observer: IntersectionObserver | null = null;
-
-  constructor(private el: ElementRef) {}
+  private el = inject(ElementRef);
 
   ngOnInit(): void {
     // Ajouter les classes initiales pour cacher l'élément
