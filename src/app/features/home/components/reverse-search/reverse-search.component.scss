@@ -1,4 +1,4 @@
-@import '../../../../styles/variables';
+@use '../../../../styles/variables' as *;
 
 .reverse-search-section {
   padding: $spacing-xxl 0;
