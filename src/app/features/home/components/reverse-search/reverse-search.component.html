@@ -1,19 +1,22 @@
 <section class="reverse-search-section">
   <div class="section-container">
-    <h2 i18n="@@reverseSearch.title">Recherche Inversée</h2>
-    <p class="section-subtitle" i18n="@@reverseSearch.subtitle">
+    <h2 appScrollReveal animationType="fade-in" i18n="@@reverseSearch.title">Recherche Inversée</h2>
+    <p class="section-subtitle" appScrollReveal animationType="fade-in" [animationDelay]="0.1" i18n="@@reverseSearch.subtitle">
       Sélectionnez vos ingrédients et découvrez ce que vous pouvez cuisiner
     </p>
-    
+
     <div class="ingredients-wrapper">
       <div class="ingredients-grid">
-        <app-ingredient-card 
-          *ngFor="let ingredient of ingredients; trackBy: trackByIngredientId"
-          [ingredient]="ingredient">
+        <app-ingredient-card
+          *ngFor="let ingredient of ingredients; let i = index; trackBy: trackByIngredientId"
+          [ingredient]="ingredient"
+          appScrollReveal
+          animationType="slide-up"
+          [animationDelay]="0.2 + (i * 0.1)">
         </app-ingredient-card>
       </div>
-      
-      <button class="btn-find-recipes">✨ Trouver des recettes</button>
+
+      <button class="btn-find-recipes" appScrollReveal animationType="zoom-in" [animationDelay]="0.8">✨ Trouver des recettes</button>
     </div>
   </div>
 </section>

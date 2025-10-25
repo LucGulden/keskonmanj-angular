@@ -1,0 +1,123 @@
+// ============================================
+// Scroll Reveal Animations
+// ============================================
+
+// Variables CSS pour personnalisation
+:root {
+  --animation-duration: 0.8s;
+  --animation-delay: 0s;
+  --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// Classe de base pour tous les éléments avec animation de scroll
+.scroll-reveal {
+  opacity: 0;
+  transition: opacity var(--animation-duration) var(--animation-timing) var(--animation-delay),
+              transform var(--animation-duration) var(--animation-timing) var(--animation-delay);
+
+  // État visible (déclenché par Intersection Observer)
+  &--visible {
+    opacity: 1;
+    transform: translate(0, 0) scale(1) !important;
+  }
+}
+
+// ============================================
+// Animation: Fade In
+// ============================================
+.scroll-reveal--fade-in {
+  opacity: 0;
+}
+
+// ============================================
+// Animation: Slide Up
+// ============================================
+.scroll-reveal--slide-up {
+  transform: translateY(50px);
+}
+
+// ============================================
+// Animation: Slide Down
+// ============================================
+.scroll-reveal--slide-down {
+  transform: translateY(-50px);
+}
+
+// ============================================
+// Animation: Slide Left
+// ============================================
+.scroll-reveal--slide-left {
+  transform: translateX(50px);
+}
+
+// ============================================
+// Animation: Slide Right
+// ============================================
+.scroll-reveal--slide-right {
+  transform: translateX(-50px);
+}
+
+// ============================================
+// Animation: Zoom In
+// ============================================
+.scroll-reveal--zoom-in {
+  transform: scale(0.9);
+}
+
+// ============================================
+// Utilitaires pour délais progressifs
+// ============================================
+@for $i from 1 through 12 {
+  .scroll-reveal-delay-#{$i} {
+    --animation-delay: #{$i * 0.1}s;
+  }
+}
+
+// ============================================
+// Animations supplémentaires pour effets spéciaux
+// ============================================
+
+// Animation de rotation douce
+.scroll-reveal--rotate {
+  transform: rotate(-5deg) scale(0.95);
+
+  &.scroll-reveal--visible {
+    transform: rotate(0deg) scale(1) !important;
+  }
+}
+
+// Animation combinée: glisse + fondu depuis le bas gauche
+.scroll-reveal--slide-diagonal-bl {
+  transform: translate(-30px, 30px);
+}
+
+// Animation combinée: glisse + fondu depuis le bas droit
+.scroll-reveal--slide-diagonal-br {
+  transform: translate(30px, 30px);
+}
+
+// ============================================
+// Animation pour listes et grilles
+// ============================================
+
+// Appliquer un délai progressif aux enfants
+.scroll-reveal-stagger {
+  > * {
+    @for $i from 1 through 20 {
+      &:nth-child(#{$i}) {
+        --animation-delay: #{$i * 0.05}s;
+      }
+    }
+  }
+}
+
+// ============================================
+// Réduction de mouvement pour l'accessibilité
+// ============================================
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal {
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
