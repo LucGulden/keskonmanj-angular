@@ -1,5 +1,8 @@
 [![codecov](https://codecov.io/gh/LucGulden/keskonmanj-angular/branch/main/graph/badge.svg)](https://codecov.io/gh/LucGulden/keskonmanj-angular)
-
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=LucGulden_keskonmanj-angular&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=LucGulden_keskonmanj-angular)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=LucGulden_keskonmanj-angular&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=LucGulden_keskonmanj-angular)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=LucGulden_keskonmanj-angular&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=LucGulden_keskonmanj-angular)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=LucGulden_keskonmanj-angular&metric=coverage)](https://sonarcloud.io/summary/new_code?id=LucGulden_keskonmanj-angular)
 
 # KeskonmanjAngular
 
