@@ -9,7 +9,7 @@
   
   <div class="dropdown-menu" [class.show]="isDropdownOpen">
     <button 
-      *ngFor="let lang of languages"
+      *ngFor="let lang of languages; trackBy: trackByLang"
       (click)="changeLanguage(lang.code)"
       [class.active]="lang.code === currentLang"
       class="dropdown-item"

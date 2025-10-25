@@ -41,4 +41,8 @@ export class ReverseSearchComponent {
       color: '#EAB308' 
     }
   ];
+
+  trackByIngredientId(index: number, ingredient: IngredientCategory): string {
+    return ingredient.id;
+  }
 }

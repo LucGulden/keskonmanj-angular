@@ -88,6 +88,10 @@ export class PopularRecipesComponent {
     }
   ];
 
+  trackByRecipeId(index: number, recipe: Recipe): string {
+    return recipe.id;
+  } 
+
   get visibleRecipes(): Recipe[] {
     return this.recipes.slice(this.currentIndex, this.currentIndex + 4);
   }

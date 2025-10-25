@@ -16,7 +16,7 @@
       
       <div class="recipes-grid">
         <app-recipe-card 
-          *ngFor="let recipe of visibleRecipes"
+          *ngFor="let recipe of visibleRecipes; trackBy: trackByRecipeId"
           [recipe]="recipe"
           class="recipe-item">
         </app-recipe-card>
