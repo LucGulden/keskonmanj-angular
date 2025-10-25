@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IngredientCardComponent } from '../../../../shared/components/ingredient-card/ingredient-card.component';
 import { IngredientCategory } from '../../../../shared/models/ingredient.model';
+import { ScrollRevealDirective } from '../../../../shared/directives';
 
 @Component({
   selector: 'app-reverse-search',
   standalone: true,
-  imports: [CommonModule, IngredientCardComponent],
+  imports: [CommonModule, IngredientCardComponent, ScrollRevealDirective],
   templateUrl: './reverse-search.component.html',
   styleUrls: ['./reverse-search.component.scss']
 })

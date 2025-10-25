@@ -1,38 +1,41 @@
 <section class="popular-recipes-section">
   <div class="section-container">
-    <div class="section-header">
+    <div class="section-header" appScrollReveal animationType="fade-in">
       <h2 i18n="@@popularRecipes.title">Recettes populaires</h2>
       <a href="#" class="view-all" i18n="@@popularRecipes.viewAll">Voir toutes les recettes →</a>
     </div>
-    
+
     <div class="carousel-wrapper">
-      <button 
-        class="carousel-btn prev" 
+      <button
+        class="carousel-btn prev"
         (click)="previousSlide()"
         [disabled]="!canGoBack"
         [class.disabled]="!canGoBack">
         ‹
       </button>
-      
+
       <div class="recipes-grid">
-        <app-recipe-card 
-          *ngFor="let recipe of visibleRecipes; trackBy: trackByRecipeId"
+        <app-recipe-card
+          *ngFor="let recipe of visibleRecipes; let i = index; trackBy: trackByRecipeId"
           [recipe]="recipe"
-          class="recipe-item">
+          class="recipe-item"
+          appScrollReveal
+          animationType="slide-left"
+          [animationDelay]="0.1 + (i * 0.1)">
         </app-recipe-card>
       </div>
-      
-      <button 
-        class="carousel-btn next" 
+
+      <button
+        class="carousel-btn next"
         (click)="nextSlide()"
         [disabled]="!canGoForward"
         [class.disabled]="!canGoForward">
         ›
       </button>
     </div>
-    
+
     <div class="carousel-indicators">
-      <!-- <span 
+      <!-- <span
         *ngFor="let recipe of recipes; let i = index"
         class="indicator"
         [class.active]="i >= currentIndex && i < currentIndex + 4"

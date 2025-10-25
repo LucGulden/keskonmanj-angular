@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RecipeCardComponent } from '../../../../shared/components/recipe-card/recipe-card.component';
 import { Recipe } from '../../../../shared/models/recipe.model';
+import { ScrollRevealDirective } from '../../../../shared/directives';
 
 @Component({
   selector: 'app-popular-recipes',
   standalone: true,
-  imports: [CommonModule, RecipeCardComponent],
+  imports: [CommonModule, RecipeCardComponent, ScrollRevealDirective],
   templateUrl: './popular-recipes.component.html',
   styleUrls: ['./popular-recipes.component.scss']
 })
