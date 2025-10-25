@@ -1,32 +1,32 @@
 <section class="stock-section">
   <div class="section-container">
-    <div class="stock-content">
+    <div class="stock-content" appScrollReveal animationType="slide-right" [animationDuration]="1">
       <h2 i18n="@@stock.title">Gérez votre stock d'ingrédients</h2>
       <p class="section-description" i18n="@@stock.description">
         Maintenez à jour votre inventaire pour des suggestions de recettes
         encore plus précises et personnalisées.
       </p>
-      
+
       <ul class="features-list">
-        <li>
+        <li appScrollReveal animationType="fade-in" [animationDelay]="0.2">
           <span class="check-icon">✓</span>
           <span i18n="@@stock.feature.add">Ajout rapide d'ingrédients par scan ou recherche</span>
         </li>
-        <li>
+        <li appScrollReveal animationType="fade-in" [animationDelay]="0.3">
           <span class="check-icon">✓</span>
           <span i18n="@@stock.feature.expiry">Suivi des dates d'expiration</span>
         </li>
-        <li>
+        <li appScrollReveal animationType="fade-in" [animationDelay]="0.4">
           <span class="check-icon">✓</span>
           <span i18n="@@stock.feature.suggestions">Suggestions automatiques basées sur votre stock</span>
         </li>
       </ul>
-      
-      <button class="btn-manage-stock" i18n="@@stock.button.manage">📦 Gérer mon stock</button>
+
+      <button class="btn-manage-stock" appScrollReveal animationType="zoom-in" [animationDelay]="0.6" i18n="@@stock.button.manage">📦 Gérer mon stock</button>
     </div>
-    
-    <div class="stock-image">
-      <img src="images/pantry-stock.png" 
+
+    <div class="stock-image" appScrollReveal animationType="slide-left" [animationDelay]="0.2" [animationDuration]="1">
+      <img src="images/pantry-stock.png"
            i18n-alt="@@stock.image.alt"
            alt="Garde-manger organisé">
     </div>

@@ -1,6 +1,6 @@
 <section class="hero-section">
   <div class="hero-container">
-    <div class="hero-content">
+    <div class="hero-content" appScrollReveal animationType="slide-up" [animationDuration]="1">
       <h1 i18n="@@hero.title">Découvrez des recettes avec vos ingrédients</h1>
       <p i18n="@@hero.description">
         Keskonmanj révolutionne votre cuisine en trouvant les meilleures recettes
@@ -11,8 +11,8 @@
         <button class="btn-secondary" i18n="@@hero.button.browse">Parcourir les recettes</button>
       </div>
     </div>
-    <div class="hero-image">
-      <img src="images/kitchen-hero.png" 
+    <div class="hero-image" appScrollReveal animationType="slide-left" [animationDelay]="0.2" [animationDuration]="1">
+      <img src="images/kitchen-hero.png"
            i18n-alt="@@hero.image.alt"
            alt="Cuisine moderne">
     </div>
