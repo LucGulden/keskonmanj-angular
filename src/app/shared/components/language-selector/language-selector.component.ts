@@ -24,6 +24,10 @@ export class LanguageSelectorComponent {
     this.currentLang = this.languageService.getCurrentLanguage();
   }
   
+  trackByLang(index: number, lang: {code: string, name: string, flagIcon: string}): string {
+    return lang.code;
+  }
+  
   changeLanguage(lang: string): void {
     this.languageService.setLanguage(lang);
     this.isDropdownOpen = false;

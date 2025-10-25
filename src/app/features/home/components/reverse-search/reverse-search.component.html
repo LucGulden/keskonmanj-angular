@@ -8,7 +8,7 @@
     <div class="ingredients-wrapper">
       <div class="ingredients-grid">
         <app-ingredient-card 
-          *ngFor="let ingredient of ingredients"
+          *ngFor="let ingredient of ingredients; trackBy: trackByIngredientId"
           [ingredient]="ingredient">
         </app-ingredient-card>
       </div>
