@@ -6,10 +6,10 @@
     <h3>{{ recipe.title }}</h3>
     <p class="recipe-description">{{ recipe.description }}</p>
     <div class="recipe-meta">
-      <span class="meta-item">⏱️ {{ recipe.prepTime }} <ng-container i18n="@@recipe.time.minutes">min</ng-container></span>
-      <span class="meta-item">👥 {{ recipe.servings }} <ng-container i18n="@@recipe.servings.people">personnes</ng-container></span>
+      <span class="meta-item">⏱️ {{ recipe.prepTime }} {{ 'recipe.time.minutes' | translate }}</span>
+      <span class="meta-item">👥 {{ recipe.servings }} {{ 'recipe.servings.people' | translate }}</span>
       <span class="meta-item">⭐ {{ recipe.rating }}</span>
     </div>
-    <button class="btn-view-recipe" i18n="@@recipe.button.view">Voir la recette</button>
+    <button class="btn-view-recipe">{{ 'recipe.button.view' | translate }}</button>
   </div>
 </div>

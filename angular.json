@@ -11,7 +11,10 @@
         }
       },
       "i18n": {
-        "sourceLocale": "fr",
+        "sourceLocale": {
+          "code": "fr",
+          "baseHref": "/"
+        },
         "locales": {
           "en": {
             "translation": "src/locale/messages.en.xlf",
@@ -60,12 +63,20 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "localize": true
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "localize": false
+            },
+            "fr": {
+              "localize": ["fr"]
+            },
+            "en": {
+              "localize": ["en"]
             }
           },
           "defaultConfiguration": "production"
@@ -78,6 +89,12 @@
             },
             "development": {
               "buildTarget": "keskonmanj-angular:build:development"
+            },
+            "fr": {
+              "buildTarget": "keskonmanj-angular:build:fr"
+            },
+            "en": {
+              "buildTarget": "keskonmanj-angular:build:en"
             }
           },
           "defaultConfiguration": "development"

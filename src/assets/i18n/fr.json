@@ -1,0 +1,102 @@
+{
+  "app": {
+    "name": "Keskonmanj"
+  },
+  "nav": {
+    "home": "Accueil",
+    "recipes": "Recettes",
+    "stock": "Mon Stock",
+    "favorites": "Favoris"
+  },
+  "search": {
+    "placeholder": "Rechercher une recette..."
+  },
+  "button": {
+    "add": "+ Ajouter"
+  },
+  "hero": {
+    "title": "Découvrez des recettes avec vos ingrédients",
+    "description": "Keskonmanj révolutionne votre cuisine en trouvant les meilleures recettes selon les ingrédients que vous avez chez vous.",
+    "button": {
+      "reverse": "🔍 Recherche inversée",
+      "browse": "Parcourir les recettes"
+    },
+    "image": {
+      "alt": "Cuisine moderne"
+    }
+  },
+  "reverseSearch": {
+    "title": "Recherche Inversée",
+    "subtitle": "Sélectionnez vos ingrédients et découvrez ce que vous pouvez cuisiner",
+    "button": {
+      "find": "✨ Trouver des recettes"
+    }
+  },
+  "ingredient": {
+    "vegetables": "Légumes",
+    "meat": "Viandes",
+    "fish": "Poissons",
+    "dairy": "Produits laitiers",
+    "available": "{{count}} disponibles"
+  },
+  "popularRecipes": {
+    "title": "Recettes populaires",
+    "viewAll": "Voir toutes les recettes →"
+  },
+  "recipe": {
+    "time": {
+      "minutes": "min"
+    },
+    "servings": {
+      "people": "personnes"
+    },
+    "button": {
+      "view": "Voir la recette"
+    }
+  },
+  "stock": {
+    "title": "Gérez votre stock d'ingrédients",
+    "description": "Maintenez à jour votre inventaire pour des suggestions de recettes encore plus précises et personnalisées.",
+    "feature": {
+      "add": "Ajout rapide d'ingrédients par scan ou recherche",
+      "expiry": "Suivi des dates d'expiration",
+      "suggestions": "Suggestions automatiques basées sur votre stock"
+    },
+    "button": {
+      "manage": "📦 Gérer mon stock"
+    },
+    "image": {
+      "alt": "Garde-manger organisé"
+    }
+  },
+  "cta": {
+    "title": "Prêt à révolutionner votre cuisine ?",
+    "description": "Rejoignez des milliers d'utilisateurs qui cuisinent déjà plus intelligemment avec Keskonmanj.",
+    "button": {
+      "start": "Commencer gratuitement",
+      "learn": "En savoir plus"
+    }
+  },
+  "footer": {
+    "description": "L'application qui révolutionne votre façon de cuisiner avec vos ingrédients.",
+    "product": {
+      "title": "Produit",
+      "features": "Fonctionnalités",
+      "pricing": "Tarifs",
+      "api": "API"
+    },
+    "support": {
+      "title": "Support",
+      "guide": "Guide d'aide",
+      "contact": "Contact",
+      "faq": "FAQ"
+    },
+    "legal": {
+      "title": "Légal",
+      "privacy": "Confidentialité",
+      "terms": "Conditions",
+      "cookies": "Cookies"
+    },
+    "copyright": "© {{year}} Keskonmanj. Tous droits réservés."
+  }
+}

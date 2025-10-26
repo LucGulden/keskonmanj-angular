@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 import { RecipeCardComponent } from '../../../../shared/components/recipe-card/recipe-card.component';
 import { Recipe } from '../../../../shared/models/recipe.model';
 
 @Component({
   selector: 'app-popular-recipes',
   standalone: true,
-  imports: [CommonModule, RecipeCardComponent],
+  imports: [CommonModule, RecipeCardComponent, TranslateModule],
   templateUrl: './popular-recipes.component.html',
   styleUrls: ['./popular-recipes.component.scss']
 })

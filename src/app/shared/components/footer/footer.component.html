@@ -3,10 +3,10 @@
     <div class="footer-section">
       <div class="footer-logo">
         <div class="logo-icon">K</div>
-        <span class="logo-text" i18n="@@app.name">Keskonmanj</span>
+        <span class="logo-text">{{ 'app.name' | translate }}</span>
       </div>
-      <p class="footer-description" i18n="@@footer.description">
-        L'application qui révolutionne votre façon de cuisiner avec vos ingrédients.
+      <p class="footer-description">
+        {{ 'footer.description' | translate }}
       </p>
       <div class="social-links">
         <a href="#" aria-label="Facebook">f</a>
@@ -16,34 +16,34 @@
     </div>
 
     <div class="footer-section">
-      <h4 i18n="@@footer.product.title">Produit</h4>
+      <h4>{{ 'footer.product.title' | translate }}</h4>
       <ul>
-        <li><a routerLink="/features" i18n="@@footer.product.features">Fonctionnalités</a></li>
-        <li><a routerLink="/tarifs" i18n="@@footer.product.pricing">Tarifs</a></li>
-        <li><a routerLink="/api" i18n="@@footer.product.api">API</a></li>
+        <li><a routerLink="/features">{{ 'footer.product.features' | translate }}</a></li>
+        <li><a routerLink="/tarifs">{{ 'footer.product.pricing' | translate }}</a></li>
+        <li><a routerLink="/api">{{ 'footer.product.api' | translate }}</a></li>
       </ul>
     </div>
 
     <div class="footer-section">
-      <h4 i18n="@@footer.support.title">Support</h4>
+      <h4>{{ 'footer.support.title' | translate }}</h4>
       <ul>
-        <li><a routerLink="/guide" i18n="@@footer.support.guide">Guide d'aide</a></li>
-        <li><a routerLink="/contact" i18n="@@footer.support.contact">Contact</a></li>
-        <li><a routerLink="/faq" i18n="@@footer.support.faq">FAQ</a></li>
+        <li><a routerLink="/guide">{{ 'footer.support.guide' | translate }}</a></li>
+        <li><a routerLink="/contact">{{ 'footer.support.contact' | translate }}</a></li>
+        <li><a routerLink="/faq">{{ 'footer.support.faq' | translate }}</a></li>
       </ul>
     </div>
 
     <div class="footer-section">
-      <h4 i18n="@@footer.legal.title">Légal</h4>
+      <h4>{{ 'footer.legal.title' | translate }}</h4>
       <ul>
-        <li><a routerLink="/legal" i18n="@@footer.legal.privacy">Confidentialité</a></li>
-        <li><a routerLink="/legal" i18n="@@footer.legal.terms">Conditions</a></li>
-        <li><a routerLink="/legal" i18n="@@footer.legal.cookies">Cookies</a></li>
+        <li><a routerLink="/legal">{{ 'footer.legal.privacy' | translate }}</a></li>
+        <li><a routerLink="/legal">{{ 'footer.legal.terms' | translate }}</a></li>
+        <li><a routerLink="/legal">{{ 'footer.legal.cookies' | translate }}</a></li>
       </ul>
     </div>
   </div>
 
   <div class="footer-bottom">
-    <p i18n="@@footer.copyright">© {{ currentYear }} Keskonmanj. Tous droits réservés.</p>
+    <p>{{ 'footer.copyright' | translate:{ currentYear: currentYear } }}</p>
   </div>
 </footer>

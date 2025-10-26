@@ -2,31 +2,34 @@
   <div class="header-container">
     <div class="logo">
       <div class="logo-icon">K</div>
-      <span class="logo-text" i18n="@@app.name">Keskonmanj</span>
+      <span class="logo-text">{{ 'app.name' | translate }}</span>
     </div>
 
     <nav class="nav-desktop">
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" 
-         i18n="@@nav.home">Accueil</a>
-      <a routerLink="/recipes" routerLinkActive="active" 
-         i18n="@@nav.recipes">Recettes</a>
-      <a routerLink="/stock" routerLinkActive="active" 
-         i18n="@@nav.stock">Mon Stock</a>
-      <a routerLink="/favorites" routerLinkActive="active" 
-         i18n="@@nav.favorites">Favoris</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        {{ 'nav.home' | translate }}
+      </a>
+      <a routerLink="/recipes" routerLinkActive="active">
+        {{ 'nav.recipes' | translate }}
+      </a>
+      <a routerLink="/stock" routerLinkActive="active">
+        {{ 'nav.stock' | translate }}
+      </a>
+      <a routerLink="/favorites" routerLinkActive="active">
+        {{ 'nav.favorites' | translate }}
+      </a>
     </nav>
 
     <div class="header-actions">
       <div class="search-bar">
-        <input type="text" 
-               i18n-placeholder="@@search.placeholder"
-               placeholder="Rechercher une recette...">
+        <input type="text"
+               [placeholder]="'search.placeholder' | translate">
         <button class="search-btn">
           <span class="icon">🔍</span>
         </button>
       </div>
       <app-language-selector></app-language-selector>
-      <button class="btn-add" i18n="@@button.add">+ Ajouter</button>
+      <button class="btn-add">{{ 'button.add' | translate }}</button>
       <div class="user-avatar">
         <img src="https://www.svgrepo.com/show/384670/account-avatar-profile-user.svg" alt="User">
       </div>
@@ -40,9 +43,9 @@
   </div>
 
   <nav class="nav-mobile" [class.active]="isMenuOpen">
-    <a routerLink="/" (click)="toggleMenu()" i18n="@@nav.home">Accueil</a>
-    <a routerLink="/recipes" (click)="toggleMenu()" i18n="@@nav.recipes">Recettes</a>
-    <a routerLink="/stock" (click)="toggleMenu()" i18n="@@nav.stock">Mon Stock</a>
-    <a routerLink="/favorites" (click)="toggleMenu()" i18n="@@nav.favorites">Favoris</a>
+    <a routerLink="/" (click)="toggleMenu()">{{ 'nav.home' | translate }}</a>
+    <a routerLink="/recipes" (click)="toggleMenu()">{{ 'nav.recipes' | translate }}</a>
+    <a routerLink="/stock" (click)="toggleMenu()">{{ 'nav.stock' | translate }}</a>
+    <a routerLink="/favorites" (click)="toggleMenu()">{{ 'nav.favorites' | translate }}</a>
   </nav>
 </header>

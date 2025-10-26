@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 import { IngredientCardComponent } from '../../../../shared/components/ingredient-card/ingredient-card.component';
 import { IngredientCategory } from '../../../../shared/models/ingredient.model';
 
 @Component({
   selector: 'app-reverse-search',
   standalone: true,
-  imports: [CommonModule, IngredientCardComponent],
+  imports: [CommonModule, IngredientCardComponent, TranslateModule],
   templateUrl: './reverse-search.component.html',
   styleUrls: ['./reverse-search.component.scss']
 })

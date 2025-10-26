@@ -3,5 +3,5 @@
     {{ ingredient.icon }}
   </div>
   <h3>{{ ingredient.name }}</h3>
-  <p i18n="@@ingredient.available">{{ ingredient.count }} disponibles</p>
+  <p>{{ 'ingredient.available' | translate:{ count: ingredient.count } }}</p>
 </div>

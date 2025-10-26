@@ -1,34 +1,32 @@
 <section class="stock-section">
   <div class="section-container">
     <div class="stock-content">
-      <h2 i18n="@@stock.title">Gérez votre stock d'ingrédients</h2>
-      <p class="section-description" i18n="@@stock.description">
-        Maintenez à jour votre inventaire pour des suggestions de recettes
-        encore plus précises et personnalisées.
+      <h2>{{ 'stock.title' | translate }}</h2>
+      <p class="section-description">
+        {{ 'stock.description' | translate }}
       </p>
-      
+
       <ul class="features-list">
         <li>
           <span class="check-icon">✓</span>
-          <span i18n="@@stock.feature.add">Ajout rapide d'ingrédients par scan ou recherche</span>
+          <span>{{ 'stock.feature.add' | translate }}</span>
         </li>
         <li>
           <span class="check-icon">✓</span>
-          <span i18n="@@stock.feature.expiry">Suivi des dates d'expiration</span>
+          <span>{{ 'stock.feature.expiry' | translate }}</span>
         </li>
         <li>
           <span class="check-icon">✓</span>
-          <span i18n="@@stock.feature.suggestions">Suggestions automatiques basées sur votre stock</span>
+          <span>{{ 'stock.feature.suggestions' | translate }}</span>
         </li>
       </ul>
-      
-      <button class="btn-manage-stock" i18n="@@stock.button.manage">📦 Gérer mon stock</button>
+
+      <button class="btn-manage-stock">{{ 'stock.button.manage' | translate }}</button>
     </div>
-    
+
     <div class="stock-image">
-      <img src="images/pantry-stock.png" 
-           i18n-alt="@@stock.image.alt"
-           alt="Garde-manger organisé">
+      <img src="images/pantry-stock.png"
+           [alt]="'stock.image.alt' | translate">
     </div>
   </div>
 </section>

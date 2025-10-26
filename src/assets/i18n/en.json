@@ -1,0 +1,102 @@
+{
+  "app": {
+    "name": "Keskonmanj"
+  },
+  "nav": {
+    "home": "Home",
+    "recipes": "Recipes",
+    "stock": "My Stock",
+    "favorites": "Favorites"
+  },
+  "search": {
+    "placeholder": "Search for a recipe..."
+  },
+  "button": {
+    "add": "+ Add"
+  },
+  "hero": {
+    "title": "Discover recipes with your ingredients",
+    "description": "Keskonmanj revolutionizes your cooking by finding the best recipes based on the ingredients you have at home.",
+    "button": {
+      "reverse": "🔍 Reverse Search",
+      "browse": "Browse Recipes"
+    },
+    "image": {
+      "alt": "Modern kitchen"
+    }
+  },
+  "reverseSearch": {
+    "title": "Reverse Search",
+    "subtitle": "Select your ingredients and discover what you can cook",
+    "button": {
+      "find": "✨ Find Recipes"
+    }
+  },
+  "ingredient": {
+    "vegetables": "Vegetables",
+    "meat": "Meat",
+    "fish": "Fish",
+    "dairy": "Dairy Products",
+    "available": "{{count}} available"
+  },
+  "popularRecipes": {
+    "title": "Popular Recipes",
+    "viewAll": "View all recipes →"
+  },
+  "recipe": {
+    "time": {
+      "minutes": "min"
+    },
+    "servings": {
+      "people": "people"
+    },
+    "button": {
+      "view": "View Recipe"
+    }
+  },
+  "stock": {
+    "title": "Manage your ingredient stock",
+    "description": "Keep your inventory up to date for even more accurate and personalized recipe suggestions.",
+    "feature": {
+      "add": "Quick ingredient addition by scan or search",
+      "expiry": "Expiration date tracking",
+      "suggestions": "Automatic suggestions based on your stock"
+    },
+    "button": {
+      "manage": "📦 Manage my stock"
+    },
+    "image": {
+      "alt": "Organized pantry"
+    }
+  },
+  "cta": {
+    "title": "Ready to revolutionize your cooking?",
+    "description": "Join thousands of users who are already cooking smarter with Keskonmanj.",
+    "button": {
+      "start": "Start for free",
+      "learn": "Learn more"
+    }
+  },
+  "footer": {
+    "description": "The app that revolutionizes the way you cook with your ingredients.",
+    "product": {
+      "title": "Product",
+      "features": "Features",
+      "pricing": "Pricing",
+      "api": "API"
+    },
+    "support": {
+      "title": "Support",
+      "guide": "Help Guide",
+      "contact": "Contact",
+      "faq": "FAQ"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "cookies": "Cookies"
+    },
+    "copyright": "© {{year}} Keskonmanj. All rights reserved."
+  }
+}
